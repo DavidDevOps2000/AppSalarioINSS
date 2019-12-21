@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/salBruto"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#131313"
+        android:textColorLink="#0C0202"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalario2" />
+
+    <TextView
+        android:id="@+id/txtSalario2"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Salário Bruto:"
+        android:textAlignment="center"
+        android:textColor="#090808"
+        android:textColorHighlight="#E2CF2D"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text" />
+
+    <TextView
+        android:id="@+id/perc"
+        android:layout_width="359dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:text="Percentual de Desc. (%)"
+        android:textAlignment="center"
+        android:textColor="#090808"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salBruto" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="355dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:text="Salário á receber: R$"
+        android:textAlignment="center"
+        android:textColor="#090808"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perc" />
+
+
+    <Button
+        android:id="@+id/btnZerar"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_aredondado"
+        android:backgroundTint="#FF9800"
+        android:enabled="true"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false"
+        android:shadowRadius="5"
+        android:text="Resetar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btn_aredondado"
+        android:backgroundTint="#FF9800"
+        android:enabled="true"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false"
+        android:shadowRadius="5"
+        android:text="Calcular Salário"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZerar" />
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:text="Calculadora de INSS"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$"
+        android:textColor="#F80C0808"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/salBruto"
+        app:layout_constraintEnd_toStartOf="@+id/salBruto"
+        app:layout_constraintTop_toTopOf="@+id/salBruto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
